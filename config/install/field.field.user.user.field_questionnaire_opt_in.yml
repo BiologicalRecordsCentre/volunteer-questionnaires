@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_questionnaire_opt_in
+  module:
+    - user
+id: user.user.field_questionnaire_opt_in
+field_name: field_questionnaire_opt_in
+entity_type: user
+bundle: user
+label: 'Volunteer questionnaire opt-in'
+description: 'Tick this box to opt-in to participating in volunteer questionnaires.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

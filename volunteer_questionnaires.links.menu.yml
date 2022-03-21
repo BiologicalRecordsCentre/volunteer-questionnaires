@@ -1,0 +1,6 @@
+volunteer_questionnaires.settings:
+  title: 'Volunteer Questionnaires settings'
+  description: 'Settings page for the Volunteer Questionnaires module'
+  parent: user.admin_index
+  route_name: volunteer_questionnaires.settings
+  weight: 50

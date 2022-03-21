@@ -1,0 +1,7 @@
+volunteer_questionnaires.settings:
+  path: '/admin/config/people/volunteer_questionnaires_settings'
+  defaults:
+    _form: '\Drupal\volunteer_questionnaires\Form\VolunteerQuestionnairesSettingsForm'
+    _title: 'Volunteer Questionnaires settings'
+  requirements:
+    _permission: 'admin volunteer questionnaires'
