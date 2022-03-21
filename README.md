@@ -5,11 +5,16 @@ Volunteers can opt-in to participation. The module tracks the questionnaires tha
 asked to complete and removes completed forms from the list. One questionnaire can be set as a
 default questionnaire that all opted-in users are asked to complete.
 
-Provides a block listing the questionnaires for a user to complete.
+This module provides a block listing the questionnaires for a user to complete.
+
+Functionality for building questionnaires and managing submissions is provided by the
+[Webform module](https://www.drupal.org/project/webform).
 
 ## Installation
 
-The Volunteer Questionnaires module requires the [Webform module](https://www.drupal.org/project/webform). In addition, install the [Webform Anonymizer module](https://www.drupal.org/project/webform_anonymizer) module if anonymouse submissions are required.
+The Volunteer Questionnaires module requires the [Webform module](https://www.drupal.org/project/webform).
+In addition, install the [Webform Anonymizer module](https://www.drupal.org/project/webform_anonymizer)
+module if anonymouse submissions are required.
 
 Install the Volunteer Questionnaires module as normal.
 
