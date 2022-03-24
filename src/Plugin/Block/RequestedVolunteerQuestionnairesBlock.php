@@ -28,14 +28,15 @@ class RequestedVolunteerQuestionnairesBlock extends BlockBase {
         foreach ($forms as $form) {
           $list[] = [
             'title' => $form->get('title'),
-            'url' => $form->toUrl(),
+            'url' => $form->toUrl()->toString(),
           ];
         }
       }
     }
     return [
-      '#theme' => 'block__requested_volunteer_questionnaires',
+      '#theme' => 'requested_volunteer_questionnaires_block',
       '#items' => $list,
+      '#simpletest' => 'bar',
     ];
   }
 

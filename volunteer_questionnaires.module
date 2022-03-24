@@ -48,9 +48,10 @@ function volunteer_questionnaires_user_presave(UserInterface $user) {
  */
 function volunteer_questionnaires_theme() {
   return [
-    'block__volunteer_questionnaires_requested_forms' => [
-      'variables' => ['items' => NULL],
-      'template' => 'block--volunteer-questionnaires-requested-forms',
+    'requested_volunteer_questionnaires_block' => [
+      'variables' => [
+        'items' => NULL,
+      ],
     ],
   ];
 }
