@@ -14,7 +14,7 @@ Functionality for building questionnaires and managing submissions is provided b
 
 The Volunteer Questionnaires module requires the [Webform module](https://www.drupal.org/project/webform).
 In addition, install the [Webform Anonymizer module](https://www.drupal.org/project/webform_anonymizer)
-module if anonymouse submissions are required.
+module if anonymous submissions are required.
 
 Install the Volunteer Questionnaires module as normal.
 
