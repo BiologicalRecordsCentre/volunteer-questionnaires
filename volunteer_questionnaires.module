@@ -1,7 +1,6 @@
 <?php
 
 use Drupal\user\UserInterface;
-use \Drupal\Core\Link;
 
 /**
  * Implements hook_ENTITY_TYPE_presave().

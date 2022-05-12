@@ -13,8 +13,6 @@ Functionality for building questionnaires and managing submissions is provided b
 ## Installation
 
 The Volunteer Questionnaires module requires the [Webform module](https://www.drupal.org/project/webform).
-In addition, install the [Webform Anonymizer module](https://www.drupal.org/project/webform_anonymizer)
-module if anonymouse submissions are required.
 
 Install the Volunteer Questionnaires module as normal.
 
@@ -32,12 +30,16 @@ haven't yet completed. This is similar to the field described above but can be a
 the site, not just to the View user profile page. This can be themed using the template
 `block--volunteer-questionnaires-requested-forms.html.twig`.
 
-Webforms can now be created with your volunteer questionnaires. Refer to the documentation for that
-module. When creating the form, if you want the results to be saved anonymously and have installed
-the Webform Anonymizer module there is an option under Settings > Form, "Anonymize results" which
-should be ticked. You also need to configure the form to run the webform handler when forms are
-submitted - to do this, on the Settings > Email / Handlers tab, click Add handler, Volunteer
-Questionnaires, then save the handler.
+Webforms can now be created with your volunteer questionnaires. Refer to the documentation for the
+[Webform module](https://www.drupal.org/project/webform).
+
+When creating the form, if you want the IP address of the user submitting the form to be not
+tracked, then there is an option Settings > Submission, "Disable the tracking of user IP address"
+which should be ticked. You also need to configure the form to run the Volunteer Questionnaires
+webform handler when forms are submitted - to do this, on the Settings > Email / Handlers tab,
+click Add handler, Volunteer Questionnaires, then save the handler. This handler removes the user
+ID from the form submission and also removes the form from the user's list of requested forms to
+complete.
 
 There is also an option in the module to select a default form which will be added to the list of
 requested forms for all users who opt-in. The option to choose this form is at

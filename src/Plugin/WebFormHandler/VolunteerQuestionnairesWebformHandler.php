@@ -22,6 +22,15 @@ class VolunteerQuestionnairesWebformHandler extends WebformHandlerBase {
   /**
    * {@inheritdoc}
    *
+   * Before saving a form, remove the user ID so it is anonymous.
+   */
+  public function preSave(WebformSubmissionInterface $webformSubmission) {
+    $webformSubmission->uid = 0;
+  }
+
+  /**
+   * {@inheritdoc}
+   *
    * Post save of a form, need to remove it from the list of requested forms.
    */
   public function postSave(WebformSubmissionInterface $webformSubmission, $update = TRUE) {
@@ -39,7 +48,7 @@ class VolunteerQuestionnairesWebformHandler extends WebformHandlerBase {
         }
       }
     }
-    // Update the field and save.
+    // Update the requested questionnaires field.
     $user->get('field_requested_questionnaires')->setValue($formsToSave);
     $user->save();
   }
